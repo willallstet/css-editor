@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Editor on Triple Click</title>
+  <style>
+    body {
+      font-family: monospace;
+      background-color: black;
+      color: rgb(0, 255, 0);
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Triple-click any element to edit its CSS.</p>
+  <!--
+<label>
+  <input type="checkbox" id="toggle-links"> Make Links Unclickable
+</label>
+
+  <label>
+    <input type="checkbox" id="toggle-extension"> Enable Extension
+  </label>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      chrome.runtime.sendMessage({ action: 'getLinksUnclickable' }, (response) => {
+        document.getElementById('toggle-links').checked = response.linksUnclickable;
+      });
+
+      document.getElementById('toggle-links').addEventListener('change', (event) => {
+        const makeUnclickable = event.target.checked;
+        chrome.runtime.sendMessage({ action: 'setLinksUnclickable', value: makeUnclickable });
+        chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+          chrome.scripting.executeScript({
+            target: { tabId: tabs[0].id },
+            function: toggleLinks,
+            args: [makeUnclickable]
+          });
+        });
+      });
+    });
+
+    //function toggleLinks(makeUnclickable) {
+     // const links = document.querySelectorAll('a');
+      //links.forEach(link => {
+        //link.style.pointerEvents = makeUnclickable ? 'none' : 'auto';
+     // });
+    //}
+  </script>
+</body>
+
+</html>
+-->
